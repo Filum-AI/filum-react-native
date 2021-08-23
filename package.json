@@ -1,0 +1,65 @@
+{
+  "name": "filum-react-native",
+  "version": "v1.0.0",
+  "description": "The sdk to integrate React Native application with Filum",
+  "license": "MIT",
+  "repository": "Filum-AI/filum-react-native",
+  "author": {
+    "name": "Filum AI",
+    "email": "hiep@filum.ai",
+    "url": "https://filum.ai"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "dependencies": "yarn",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "np": "np --no-publish",
+    "release": "yarn run np"
+  },
+  "files": [
+    "index.js",
+    "storage.js",
+    "device.js",
+    "identity.js"
+  ],
+  "keywords": [
+    "filum",
+    "analytics",
+    "client",
+    "react-native"
+  ],
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.5",
+    "axios": "^0.21.1",
+    "axios-retry": "^3.0.2",
+    "import": "^0.0.6",
+    "lodash.isstring": "^4.0.1",
+    "ms": "^2.0.0",
+    "react-native-device-info": "^8.1.7",
+    "react-native-uuid": "^2.0.1",
+    "remove-trailing-slash": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.17.1",
+    "codecov": "^3.0.0",
+    "commander": "^2.9.0",
+    "delay": "^4.2.0",
+    "express": "^4.15.2",
+    "husky": "^3.0.4",
+    "nyc": "^14.1.1",
+    "pify": "^4.0.1",
+    "sinon": "^7.3.2",
+    "snyk": "^1.171.1",
+    "standard": "^12.0.1"
+  },
+  "resolutions": {
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.19",
+    "set-value": "^2.0.1",
+    "yargs-parser": "^13.1.2"
+  }
+}
