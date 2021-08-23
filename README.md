@@ -5,7 +5,7 @@ A React-Native client for [Filum](https://filum.ai)
 ## Installation
 - Use `yarn`:
 ```bash
-$ yarn add --save filum-react-native
+$ yarn add filum-react-native
 ```
 ```bash
 $ npm install --save filum-react-native
@@ -19,7 +19,7 @@ $ npm install --save filum-react-native
 let Analytics = require('filum-react-native');
 
 export const filumAnalytics = new Analytics(
-  '<YOUR WRITEKEY HERE',
+  '<YOUR WRITEKEY HERE>',
   {
     host: 'https://event.filum.ai',
   },
