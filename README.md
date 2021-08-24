@@ -5,10 +5,11 @@ A React-Native client for [Filum](https://filum.ai)
 ## Installation
 - Use `yarn`:
 ```bash
-$ yarn add filum-react-native
+$ yarn add @react-native-async-storage/async-storage react-native-device-info react-native-uuid filum-react-native
 ```
+- Use `npm`:
 ```bash
-$ npm install --save filum-react-native
+$ npm install --save @react-native-async-storage/async-storage react-native-device-info react-native-uuid filum-react-native
 ```
 
 ## Usage
@@ -26,7 +27,7 @@ export const filumAnalytics = new Analytics(
 );
 
 // In other files
-import {filumAnalytics} from './analytics';
+import { filumAnalytics } from './analytics';
 ...
 filumAnalytics.identify(user_id, {<user properties>});
 filumAnalytics.track('Order Completed',
