@@ -1,0 +1,26 @@
+{
+  "name": "react-native-filum-survey",
+  "version": "1.0.1",
+  "description": "React Native library for Filum survey",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+  },
+  "author": "Filum, Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.20",
+    "@types/react-native": "^0.65.0",
+    "react": "^17.0.2",
+    "react-native": "^0.65.1",
+    "typescript": "^4.4.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "react-native-webview": "^13.8.1"
+  }
+}
