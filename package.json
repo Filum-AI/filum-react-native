@@ -1,6 +1,6 @@
 {
   "name": "react-native-filum-survey",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Native library for Filum survey",
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",

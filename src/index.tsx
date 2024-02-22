@@ -7,19 +7,32 @@ interface Props {
   campaignId: string;
   userPhone?: string;
   userEmail?: string;
+  userId?: string;
   transactionId?: string;
   onClose?: () => void;
 }
 
+const BASE_URL = "https://survey.filum.asia";
+
 const SurveyWebview = ({
   visible,
   campaignId,
-  userEmail,
-  userPhone,
-  transactionId,
+  userEmail = "",
+  userPhone = "",
+  userId = "",
+  transactionId = "",
   onClose,
 }: Props) => {
-  const uri = `https://survey.filum.asia/${campaignId}?User Phone=${userPhone}&User Email=${userEmail}&Transaction ID=${transactionId}&source=mobile&popup=1`;
+  const params = {
+    "User Phone": userPhone,
+    "User Email": userEmail,
+    "Transaction ID": transactionId,
+    user_id: userId,
+    source: "mobile",
+    popup: "1",
+  };
+  const searchParams = new URLSearchParams(params).toString();
+  const uri = `${BASE_URL}/${campaignId}?${searchParams}`;
 
   return (
     <Modal transparent={true} animationType="slide" visible={visible}>

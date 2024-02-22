@@ -41,4 +41,5 @@ const [webviewVisible, setWebviewVisible] = useState(false);
 | campaignId    | ID of the campaign                                                     |            string |
 | userPhone     | User phone                                                             | string (optional) |
 | userEmail     | User email                                                             | string (optional) |
+| userId        | User ID                                                                | string (optional) |
 | transactionId | ID of the transaction                                                  | string (optional) |
